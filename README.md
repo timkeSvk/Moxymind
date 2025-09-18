@@ -38,18 +38,18 @@ RUNNING THE TESTS
 - can be then used in Jenkins as Parameter  
 
 UI TESTS:  
-Chrome Browser: npm run UI_chrome  
-Firefox Browser: npm run UI_firefox  
-Safari Browser: npm run UI_safari  
-iPhone15 (web responsive testing): npm run UI_iPhone  
-Samsung Galaxy S8: (web responsive testing): npm run UI_samsung  
-UI_Full_Regression (all UI tests): npm run UI_all  
+- Chrome Browser: npm run UI_chrome  
+- Firefox Browser: npm run UI_firefox  
+- Safari Browser: npm run UI_safari  
+- iPhone15 (web responsive testing): npm run UI_iPhone  
+- Samsung Galaxy S8: (web responsive testing): npm run UI_samsung  
+- UI_Full_Regression (all UI tests): npm run UI_all  
 
 NOTE: You can run tests (in one test-file)) in parallel mode : just uncomment line: "test.describe.configure({mode: 'parallel'});" otherwise they will run sequentially
 *****
 
 API TESTS:  
-all: npm run api
+- All: npm run api
 
 SHOWING THE REPORT:
 --------------------
