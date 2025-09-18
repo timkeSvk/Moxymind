@@ -9,24 +9,26 @@ PREPARATION
 TESTS DESCRIPTION
 -----------------
 UI:
-	- there are 6 login page tests:
- 		- success login
-		- locked user
-		- wrong password
-		- non existing user
-		- empty form
-		- no password given
+there are 6 login page tests:
 
-	- tests are data-driven so can be added , updated , removed without editing the main code
-	- test-data (inputs & exp.results)can be found under: ressources/loginTestData.json
+- success login
+- locked user
+- wrong password
+- non existing user
+- empty form
+- no password given
+
+- tests are data-driven so can be added , updated , removed without editing the main code
+- test-data (inputs & exp.results)can be found under: ressources/loginTestData.json
 
 API:
-	- there are 2 tests:
-		* get users api request test
-		* create user api request test
-  
-	- tests are data-driven so can be added , updated , removed without editing the main code
-	- test-data (inputs & exp.results) can be found under: ressources/apiTestData.json
+there are 2 tests:
+
+- get users api request test
+- create user api request test
+
+- tests are data-driven so can be added , updated , removed without editing the main code
+- test-data (inputs & exp.results) can be found under: ressources/apiTestData.json
 
 
 RUNNING THE TESTS (please run particular command from terminal or command line where the Project is stored) (can be then used in Jenkins as Parameter)
