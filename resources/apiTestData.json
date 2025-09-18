@@ -1,0 +1,69 @@
+[
+    {
+        "testName": "getUsers",
+        "requestType": "get",
+        "endpoint": "api/users?page=2",
+        "responseCode": 200,
+        "dataVerification": [
+            {
+                "verificationType": "value",
+                "dataPath": "total",
+                "expected": 12
+            },
+            {
+                "verificationType": "value",
+                "dataPath": "data[0].last_name",
+                "expected": "Lawson"
+            },
+            {
+                "verificationType": "value",
+                "dataPath": "data[1].last_name",
+                "expected": "Ferguson"
+            },
+            {
+                "verificationType": "value",
+                "dataPath": "data.length",
+                "expected": 6
+            },
+            {
+                "verificationType": "dataType",
+                "dataPath": "page",
+                "expected": "number"
+            },
+            {
+                "verificationType": "dataType",
+                "dataPath": "data[0].first_name",
+                "expected": "string"
+            }
+        ]
+    },
+    {
+        "testName": "createUser",
+        "requestType": "post",
+        "endpoint": "api/users",
+        "data": {
+            "name": "Kixo Kixovic",
+            "job": "tester",
+            "id": "123"
+        },
+        "responseCode": 201,
+        "maxResponseTime": 1000,
+        "dataVerification": [
+            {
+                "verificationType": "value",
+                "dataPath": "name",
+                "expected": "Kixo Kixovic"
+            },
+            {
+                "verificationType": "value",
+                "dataPath": "job",
+                "expected": "tester"
+            },
+            {
+                "verificationType": "value",
+                "dataPath": "id",
+                "expected": "123"
+            }
+        ]
+    }
+]

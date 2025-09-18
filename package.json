@@ -1,0 +1,22 @@
+{
+  "name": "moxymind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "UI_all": "npx playwright test ../tests/uiTests.spec.js",
+    "UI_chrome": "npx playwright test ../tests/uiTests.spec.js --project=chrome",
+    "UI_firefox": "npx playwright test ../tests/uiTests.spec.js --project=firefox",
+    "UI_safari": "npx playwright test ../tests/uiTests.spec.js --project=safari",
+    "UI_iPhone": "npx playwright test ../tests/uiTests.spec.js --project=iPhone",
+    "UI_samsung": "npx playwright test ../tests/uiTests.spec.js --project=samsung",
+    "api": "npx playwright test ../tests/apiTests.spec.js --project=api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.0"
+  }
+}
