@@ -10,12 +10,12 @@ TESTS DESCRIPTION
 -----------------
 UI:
 	- there are 6 login page tests:
-		* success login
-		* locked user
-		* wrong password
-		* non existing user
-		* empty form
-		* no password given
+ 		- success login
+		- locked user
+		- wrong password
+		- non existing user
+		- empty form
+		- no password given
 
 	- tests are data-driven so can be added , updated , removed without editing the main code
 	- test-data (inputs & exp.results)can be found under: ressources/loginTestData.json
